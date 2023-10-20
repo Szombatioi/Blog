@@ -6,7 +6,9 @@ html{
 body{
     font-family: "Roboto";
     background-color: #323949;
-    color: whitesmoke;
+    /* color: whitesmoke; */
+    /* background-color: black; */
+    color: orange;
     word-spacing: 0;
 }
 a{
@@ -27,7 +29,7 @@ a{
     position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
 
     border: 8px solid black;
     border-bottom: 8px solid transparent;
@@ -35,4 +37,15 @@ a{
     border-radius: 50%;
     width: 150px;
     height: 150px;
+
+    animation: load 1s linear infinite;
+}
+
+@keyframes load{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
