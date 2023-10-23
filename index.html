@@ -10,9 +10,16 @@
     <link rel="icon" href="src/profile_icon.png">
 </head>
 <body onload="onLoad()">
+    <div class="underConstruction">
+        <img src="https://drill-line.hu/wp-content/uploads/2016/07/Under-construction.png"/>
+        <p>Sorry, page is under construction... :(</p>
+    </div>
     <div id="loader">
         <div class="load_anim"></div>
     </div>
+    
+
+
     <h1>My journey in coding</h1>
 
     <div class="part">
@@ -37,13 +44,11 @@
     </div>
 </body>
 <script>
-    function delay(time) {
+    /*function delay(time) {
         return new Promise(resolve => setTimeout(resolve, time));
-    }
+    }*/
     function onLoad(){
-        delay(3000).then(() => document.getElementById("loader").remove())
-    }
-
-    
+        document.getElementById("loader").remove()
+    }   
 </script>
 </html>
